@@ -1,32 +1,96 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <nav class="d-flex flex-column">
+      <TopBar />
+      <LogoComp />
+      <div class="mb-4">
+        <ul
+          class="nav justify-content-center flex-column flex-sm-row fs-5 letterSpacing"
+        >
+          <li class="nav-item">
+            <router-link
+              class="nav-link active text fontFamilyInstrumentSerif"
+              aria-current="page"
+              to="/"
+              ><p class="color">İndirim</p>
+            </router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link fontFamilyInstrumentSerif" to="/about"
+              ><p class="color">Kolye</p></router-link
+            >
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link fontFamilyInstrumentSerif" to="/about"
+              ><p class="color">Bileklik</p></router-link
+            >
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link fontFamilyInstrumentSerif" to="/about"
+              ><p class="color">Yüzük</p>
+            </router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link fontFamilyInstrumentSerif" to="/about"
+              ><p class="color">Küpe</p>
+            </router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link fontFamilyInstrumentSerif" to="/about"
+              ><p class="color">Hediye</p>
+            </router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link fontFamilyInstrumentSerif" to="/about"
+              ><p class="color">Setler</p>
+            </router-link>
+          </li>
+        </ul>
+      </div>
     </nav>
     <router-view />
   </div>
 </template>
 
+<script>
+import LogoComp from "@/components/header/LogoComp.vue";
+import TopBar from "@/components/header/TopBar.vue";
+export default {
+  components: {
+    LogoComp,
+    TopBar,
+  },
+};
+</script>
+
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
 }
 
-nav {
-  padding: 30px;
+@import url("@/assets/fonts/fonts.css");
+.fontFamilyDancingScript {
+  font-family: "DancingScript", sans-serif;
 }
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
+.fontFamilyKalam {
+  font-family: "Kalam", sans-serif;
 }
-
-nav a.router-link-exact-active {
-  color: #42b983;
+.fontFamilyCourgette {
+  font-family: "Courgette", sans-serif;
+}
+.fontFamilyCinzel {
+  font-family: "Cinzel", sans-serif;
+}
+.fontFamilyInstrumentSerif {
+  font-family: "InstrumentSerif", sans-serif;
+}
+.letterSpacing {
+  letter-spacing: 0.08em;
+}
+.color {
+  color: rgb(136, 136, 136);
+}
+.color:hover {
+  color: black;
 }
 </style>

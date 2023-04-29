@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "Kalam";
+    src: url("@/assets/fonts/Kalam-Regular.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "DancingScript";
+    src: url("@/assets/fonts/DancingScript-Regular.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Courgette";
+    src: url("@/assets/fonts/Courgette-Regular.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Cinzel";
+    src: url("@/assets/fonts/Cinzel-Regular.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "InstrumentSerif";
+    src: url("@/assets/fonts/InstrumentSerif-Regular.ttf") format("truetype");
+  }
+  
