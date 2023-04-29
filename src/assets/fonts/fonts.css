@@ -18,4 +18,9 @@
     font-family: "InstrumentSerif";
     src: url("@/assets/fonts/InstrumentSerif-Regular.ttf") format("truetype");
   }
+  @font-face {
+    font-family: "GreyQo";
+    src: url("@/assets/fonts/GreyQo-Regular.ttf") format("truetype");
+  }
+  
   

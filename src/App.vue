@@ -2,47 +2,49 @@
   <div id="app">
     <nav class="d-flex flex-column">
       <TopBar />
-      <LogoComp />
-      <div class="mb-4">
+      <HeaderComp />
+      <div
+        class="mb-4 border-top border-bottom d-flex justify-content-center align-items-center"
+      >
         <ul
           class="nav justify-content-center flex-column flex-sm-row fs-5 letterSpacing"
         >
-          <li class="nav-item">
+          <li class="nav-item my-3">
             <router-link
               class="nav-link active text fontFamilyInstrumentSerif"
               aria-current="page"
               to="/"
-              ><p class="color">İndirim</p>
+              ><p class="color mb-0">İndirim</p>
             </router-link>
           </li>
-          <li class="nav-item">
+          <li class="nav-item my-3">
             <router-link class="nav-link fontFamilyInstrumentSerif" to="/about"
-              ><p class="color">Kolye</p></router-link
+              ><p class="color mb-0">Kolye</p></router-link
             >
           </li>
-          <li class="nav-item">
+          <li class="nav-item my-3">
             <router-link class="nav-link fontFamilyInstrumentSerif" to="/about"
-              ><p class="color">Bileklik</p></router-link
+              ><p class="color mb-0">Bileklik</p></router-link
             >
           </li>
-          <li class="nav-item">
+          <li class="nav-item my-3">
             <router-link class="nav-link fontFamilyInstrumentSerif" to="/about"
-              ><p class="color">Yüzük</p>
+              ><p class="color mb-0">Yüzük</p>
             </router-link>
           </li>
-          <li class="nav-item">
+          <li class="nav-item my-3">
             <router-link class="nav-link fontFamilyInstrumentSerif" to="/about"
-              ><p class="color">Küpe</p>
+              ><p class="color mb-0">Küpe</p>
             </router-link>
           </li>
-          <li class="nav-item">
+          <li class="nav-item my-3">
             <router-link class="nav-link fontFamilyInstrumentSerif" to="/about"
-              ><p class="color">Hediye</p>
+              ><p class="color mb-0">Hediye</p>
             </router-link>
           </li>
-          <li class="nav-item">
+          <li class="nav-item my-3">
             <router-link class="nav-link fontFamilyInstrumentSerif" to="/about"
-              ><p class="color">Setler</p>
+              ><p class="color mb-0">Setler</p>
             </router-link>
           </li>
         </ul>
@@ -53,11 +55,11 @@
 </template>
 
 <script>
-import LogoComp from "@/components/header/LogoComp.vue";
+import HeaderComp from "@/components/header/HeaderComp.vue";
 import TopBar from "@/components/header/TopBar.vue";
 export default {
   components: {
-    LogoComp,
+    HeaderComp,
     TopBar,
   },
 };
@@ -84,13 +86,18 @@ export default {
 .fontFamilyInstrumentSerif {
   font-family: "InstrumentSerif", sans-serif;
 }
+.fontFamilyGreyQo {
+  font-family: "GreyQo", sans-serif;
+}
 .letterSpacing {
   letter-spacing: 0.08em;
 }
 .color {
   color: rgb(136, 136, 136);
+  transition: all 0.4s;
 }
 .color:hover {
   color: black;
+  font-weight: bold;
 }
 </style>
