@@ -57,7 +57,13 @@ export default new Vuex.Store({
     ],
   },
   getters: {
-    getProduct: (state) => {
+    getKolye: (state) => {
+      return state.products.find((product) => product.id === state.id);
+    },
+    getBileklik: (state) => {
+      return state.products.find((product) => product.id === state.id);
+    },
+    getYuzuk: (state) => {
       return state.products.find((product) => product.id === state.id);
     },
   },
