@@ -3,11 +3,11 @@
     <div class="input-group mb-3 input-width">
       <input
         type="text"
-        class="form-control ps-5 rounded mt-lg-3 input-style text-center text-lg-start"
+        class="form-control ps-5 rounded mt-lg-3 input-style text-center text-lg-start border border-2"
         placeholder="Aradığınız ürünün adını yazınız"
       />
       <div class="input-group-prepend mt-lg-3">
-        <button class="btn" type="button">
+        <button class="btn buttonFocus" type="button">
           <i class="fas fa-search"></i>
         </button>
       </div>
@@ -41,12 +41,23 @@ export default {};
   transition: all 0.4s;
 }
 .input-style:focus {
-  border: 1px solid rgb(65, 65, 65);
   box-shadow: 0px 0px 10px rgb(179, 179, 179);
 }
 input::placeholder {
   color: #999;
   font-style: italic;
   font-size: 14px;
+}
+.buttonFocus {
+  border: none;
+  color: rgb(170, 169, 169);
+}
+
+.buttonFocus:hover {
+  color: black;
+}
+
+.buttonFocus:focus {
+  border: none;
 }
 </style>
