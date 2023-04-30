@@ -49,5 +49,6 @@ export default {
 .font-size {
   font-size: 60px;
   word-spacing: 20px;
+  font-weight: bolder;
 }
 </style>

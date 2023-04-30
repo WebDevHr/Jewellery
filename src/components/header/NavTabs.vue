@@ -150,7 +150,7 @@ export default {
 <style scoped>
 .nav-link:hover .color {
   color: #333;
-  font-weight: bold;
+  font-weight: 900;
 }
 
 .nav-item {
@@ -161,8 +161,9 @@ export default {
   position: relative;
   z-index: 1;
   padding: 10px;
-  color: rgb(131, 171, 31);
+  color: rgb(99, 132, 14);
   text-decoration: none;
+  font-weight: 700;
 }
 
 .nav-link::before {

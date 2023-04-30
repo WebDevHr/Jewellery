@@ -35,17 +35,18 @@ export default {};
 
 <style scoped>
 .color {
-  color: rgb(136, 136, 136);
+  color: rgb(102, 102, 102);
   transition: all 0.4s;
 }
 .color:hover,
 .color:hover .color-hover {
-  color: rgb(66, 66, 66);
+  color: rgb(39, 39, 39);
   scale: 1.05;
   cursor: pointer;
 }
 .font-size {
   font-size: 12px;
   letter-spacing: 1px;
+  font-weight: 700;
 }
 </style>

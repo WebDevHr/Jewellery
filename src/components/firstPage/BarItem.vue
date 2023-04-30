@@ -58,9 +58,10 @@ export default {
 
 .icon-description .description {
   font-size: 18px;
+  font-weight: 700;
 }
 
 .color {
-  color: rgba(43, 135, 20, 0.536);
+  color: rgba(40, 124, 19, 0.593);
 }
 </style>
