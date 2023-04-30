@@ -57,7 +57,7 @@ export default {
 }
 
 .icon-description .description {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .color {

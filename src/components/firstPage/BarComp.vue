@@ -1,8 +1,9 @@
 <template>
   <div
-    class="d-flex justify-content-center align-items-center my-5 py-4 backGround"
+    class="d-flex flex-wrap justify-content-center align-items-center my-5 backGround"
   >
     <BarItem
+      class="py-4"
       v-for="(barItem, index) in barItems"
       :key="index"
       :iconClass="barItem.iconClass"

@@ -1,6 +1,8 @@
 <template>
   <div class="m-0 p-0 fontFamilyInstrumentSerif">
-    <h5 class="bg-dark text-white m-0 p-0">Ekleriz</h5>
+    <h5 class="bg-dark text-white m-0 p-0">
+      %5 inidiriminden yararlanmak için tıklayın
+    </h5>
   </div>
 </template>
 
@@ -8,4 +10,4 @@
 export default {};
 </script>
 
-<style></style>
+<style scoped></style>
