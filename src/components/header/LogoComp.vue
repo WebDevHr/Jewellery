@@ -36,9 +36,9 @@ export default {
   transition: all 0.4s;
 }
 .logo:hover {
-  box-shadow: 5px 5px 15px rgb(192, 192, 192);
-  color: black;
+  color: rgb(84, 119, 84);
   translate: 0px -3px;
+  transform: scale(1.1);
 }
 .cover {
   object-fit: fill;
