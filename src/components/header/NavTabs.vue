@@ -28,7 +28,7 @@
           <router-link
             class="nav-link active text fontFamilyInstrumentSerif"
             aria-current="page"
-            to="/"
+            :to="{ name: 'products' }"
             @click="goToRelated()"
             ><p class="color mb-0">İndirim</p>
           </router-link>
