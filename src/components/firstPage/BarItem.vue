@@ -1,12 +1,13 @@
 <template>
   <div
     class="icon-description fs-1 mx-4 d-flex justify-content-center align-items-center"
-    @mouseover="bounce"
+    @mouseover="addIconClass"
+    @mouseout="removeIconClass"
   >
     <div class="description">
       <slot></slot>
     </div>
-    <i :class="iconClass" class="color"></i>
+    <i ref="icon" :class="iconClass" class="color"></i>
   </div>
 </template>
 
@@ -26,6 +27,20 @@ export default {
   methods: {
     bounce() {
       this.isActive = !this.isActive;
+    },
+    addIconClass() {
+      // Get the icon element using a ref
+      const icon = this.$refs.icon;
+
+      // Add a class to the icon element
+      icon.classList.add("fa-bounce");
+    },
+    removeIconClass() {
+      // Get the icon element using a ref
+      const icon = this.$refs.icon;
+
+      // Remove a class from the icon element
+      icon.classList.remove("fa-bounce");
     },
   },
 };
