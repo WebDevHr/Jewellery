@@ -57,8 +57,9 @@ export default new Vuex.Store({
     ],
   },
   getters: {
-    getProduct: (state) =>
-      return state.products.find((product) => product.id === state.id),
+    getProduct: (state) => {
+      return state.products.find((product) => product.id === state.id);
+    },
   },
   mutations: {},
   actions: {},
