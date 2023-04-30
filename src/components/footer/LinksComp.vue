@@ -17,7 +17,7 @@
         <h3>Kurumsal</h3>
         <ul>
           <li>Hakımızda</li>
-          <li>iletişim</li>
+          <li @click="contactUs">iletişim</li>
         </ul>
       </div>
       <div class="col-md-3">
@@ -42,7 +42,13 @@
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    contactUs() {
+      this.$router.push({ name: "about" });
+    },
+  },
+};
 </script>
 
 <style scoped>
