@@ -4,10 +4,10 @@
       <TopBar />
       <HeaderComp />
       <div
-        class="mb-4 border-top border-bottom d-flex justify-content-center align-items-center"
+        class="border-top border-bottom d-flex justify-content-center align-items-center"
       >
         <ul
-          class="nav justify-content-center flex-column flex-sm-row fs-5 letterSpacing"
+          class="nav d-flex justify-content-center flex-column flex-sm-row fs-5 letterSpacing"
         >
           <li class="nav-item my-3">
             <router-link
@@ -94,10 +94,36 @@ export default {
 }
 .color {
   color: rgb(136, 136, 136);
-  transition: all 0.4s;
 }
-.color:hover {
-  color: black;
+.nav-link:hover .color {
+  color: #333;
   font-weight: bold;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  position: relative;
+  z-index: 1;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #333;
+  transition: width 0.5s ease-out;
+}
+
+.nav-link:hover::before {
+  width: 100%;
 }
 </style>
