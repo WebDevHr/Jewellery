@@ -51,16 +51,19 @@
       </div>
     </nav>
     <router-view />
+    <FooterComp />
   </div>
 </template>
 
 <script>
 import HeaderComp from "@/components/header/HeaderComp.vue";
 import TopBar from "@/components/header/TopBar.vue";
+import FooterComp from "@/components/footer/FooterComp.vue";
 export default {
   components: {
     HeaderComp,
     TopBar,
+    FooterComp,
   },
 };
 </script>

@@ -35,8 +35,8 @@
             alt="picture1"
           />
           <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
+            <h5>Yakut Yüzük</h5>
+            <p>Kadınların En Beğendiği Yüzük türü.</p>
           </div>
         </div>
         <div class="carousel-item" data-bs-interval="2000">
@@ -45,10 +45,6 @@
             class="d-block w-100 height cover"
             alt="picture2"
           />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
-          </div>
         </div>
         <div class="carousel-item">
           <img
@@ -57,8 +53,8 @@
             alt="picture3"
           />
           <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
+            <h5>Özel Tasarımlar</h5>
+            <p>Çeşitli Tasarımlarla, İstediğiniz Modeli Seçiniz.</p>
           </div>
         </div>
       </div>
@@ -90,7 +86,7 @@ export default {};
 
 <style scoped>
 .height {
-  height: 500px;
+  height: 600px;
 }
 .cover {
   object-fit: cover;

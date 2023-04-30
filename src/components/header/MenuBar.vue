@@ -41,6 +41,7 @@ export default {};
 .color:hover,
 .color:hover .color-hover {
   color: rgb(66, 66, 66);
+  scale: 1.05;
   cursor: pointer;
 }
 .font-size {
