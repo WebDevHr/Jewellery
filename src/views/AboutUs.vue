@@ -29,7 +29,11 @@
           </p>
         </div>
         <div class="col-md-6">
-          <img src="@/assets/pictures/" alt="Jewelry Store" class="img-fluid" />
+          <img
+            src="@/assets/pictures/aboutus.jpg"
+            alt="Jewelry Store"
+            class="img-fluid"
+          />
         </div>
       </div>
     </div>

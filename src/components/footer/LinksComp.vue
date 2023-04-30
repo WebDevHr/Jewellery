@@ -16,7 +16,7 @@
       <div class="col-md-3">
         <h3>Kurumsal</h3>
         <ul>
-          <li>Hakımızda</li>
+          <li @click="aboutUs">Hakımızda</li>
           <li @click="contactUs">iletişim</li>
         </ul>
       </div>
@@ -46,6 +46,9 @@ export default {
   methods: {
     contactUs() {
       this.$router.push({ name: "about" });
+    },
+    aboutUs() {
+      this.$router.push({ name: "aboutus" });
     },
   },
 };
