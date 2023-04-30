@@ -57,14 +57,19 @@ export default {
 <style scoped>
 ul {
   list-style: none;
+  padding: 0;
 }
 h3 {
+  font-weight: 900;
   font-family: "InstrumentSerif", sans-serif;
+  margin-bottom: 1.5vw;
 }
 ul li {
   color: rgb(180, 180, 180);
+  font-weight: 700;
   cursor: pointer;
   transition: all 0.3s;
+  margin-bottom: 0.4vw;
 }
 ul li:hover {
   color: rgb(52, 52, 52);
