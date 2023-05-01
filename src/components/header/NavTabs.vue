@@ -28,7 +28,7 @@
           <router-link
             class="nav-link active text fontFamilyInstrumentSerif"
             aria-current="page"
-            :to="{ name: 'products', params: 'indirim' }"
+            :to="{ name: 'products', params: { key: 'indirim' } }"
             @click="goToRelated()"
             ><p class="color mb-0">İndirim</p>
           </router-link>
@@ -36,7 +36,7 @@
         <li class="nav-item my-3 item">
           <router-link
             class="nav-link fontFamilyInstrumentSerif"
-            :to="{ name: 'products', params: 'indirim' }"
+            :to="{ name: 'products', params: { key: 'kolye' } }"
             @click="goToRelated()"
             ><p class="color mb-0">Kolye</p></router-link
           >
@@ -44,7 +44,7 @@
         <li class="nav-item my-3 item">
           <router-link
             class="nav-link fontFamilyInstrumentSerif"
-            :to="{ name: 'products', params: 'bileklik' }"
+            :to="{ name: 'products', params: { key: 'bileklik' } }"
             @click="goToRelated()"
             ><p class="color mb-0">Bileklik</p></router-link
           >
@@ -52,7 +52,7 @@
         <li class="nav-item my-3 item">
           <router-link
             class="nav-link fontFamilyInstrumentSerif"
-            :to="{ name: 'products', params: 'yuzuk' }"
+            :to="{ name: 'products', params: { key: 'yuzuk' } }"
             @click="goToRelated()"
             ><p class="color mb-0">Yüzük</p>
           </router-link>
@@ -60,7 +60,7 @@
         <li class="nav-item my-3 item">
           <router-link
             class="nav-link fontFamilyInstrumentSerif"
-            :to="{ name: 'products', params: 'kupe' }"
+            :to="{ name: 'products', params: { key: 'kupe' } }"
             @click="goToRelated()"
             ><p class="color mb-0">Küpe</p>
           </router-link>
@@ -68,7 +68,7 @@
         <li class="nav-item my-3 item">
           <router-link
             class="nav-link fontFamilyInstrumentSerif"
-            :to="{ name: 'products', params: 'hediye' }"
+            :to="{ name: 'products', params: { key: 'hediye' } }"
             @click="goToRelated()"
             ><p class="color mb-0">Hediye</p>
           </router-link>
@@ -76,7 +76,7 @@
         <li class="nav-item my-3 item">
           <router-link
             class="nav-link fontFamilyInstrumentSerif"
-            :to="{ name: 'products', params: 'setler' }"
+            :to="{ name: 'products', params: { key: 'setler' } }"
             @click="goToRelated()"
             ><p class="color mb-0">Setler</p>
           </router-link>
@@ -95,6 +95,8 @@ gsap.registerPlugin(PixiPlugin, MotionPathPlugin);
 export default {
   data() {
     return {
+      tabs: ["Kolye", "Bileklik", "Yüzük", "Küpe", "Hediye", "Setler"],
+      activeTab: 0,
       isActive: false,
       timeoutId: null,
     };

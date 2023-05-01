@@ -17,7 +17,7 @@ export default {
       required: true,
     },
     image: {
-      type: Object,
+      type: String,
       required: true,
     },
     title: {

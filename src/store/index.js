@@ -194,13 +194,22 @@ export default new Vuex.Store({
   },
   getters: {
     getKolye: (state) => {
-      return state.products.find((product) => product.id === state.id);
+      return state.products.filter((product) => product.type == "kolye");
     },
     getBileklik: (state) => {
-      return state.products.find((product) => product.id === state.id);
+      return state.products.filter((product) => product.type == "bileklik");
     },
     getYuzuk: (state) => {
-      return state.products.find((product) => product.id === state.id);
+      return state.products.filter((product) => product.type == "yuzuk");
+    },
+    getKupe: (state) => {
+      return state.products.filter((product) => product.type == "kupe");
+    },
+    getHediye: (state) => {
+      return state.products.filter((product) => product.type == "hediye");
+    },
+    getSetler: (state) => {
+      return state.products.filter((product) => product.type == "setler");
     },
   },
   mutations: {},
