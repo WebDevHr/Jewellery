@@ -36,7 +36,7 @@ export default {
   transition: all 0.4s;
 }
 .logo:hover {
-  color: rgb(84, 119, 84);
+  color: rgb(0, 0, 0);
   translate: 0px -3px;
   transform: scale(1.1);
 }
