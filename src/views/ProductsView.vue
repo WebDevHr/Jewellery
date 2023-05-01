@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h1>Products</h1>
+  <div class="container">
+    <h1 class="my-5">Ürünler</h1>
     <div class="row">
       <div class="col-md-4 mb-4" v-for="product in products" :key="product.id">
         <ProductCard

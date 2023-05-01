@@ -17,7 +17,7 @@ export default {
       required: true,
     },
     image: {
-      type: String,
+      type: Object,
       required: true,
     },
     title: {
@@ -49,7 +49,7 @@ export default {
 }
 
 .card-img-top {
-  height: 200px;
+  height: 300px;
   object-fit: cover;
 }
 
