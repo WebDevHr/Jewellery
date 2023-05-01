@@ -4,13 +4,13 @@
       <div class="col-md-3">
         <h3>Kategoriler</h3>
         <ul>
-          <li>indirim</li>
-          <li>Kolye</li>
-          <li>Bileklik</li>
-          <li>Yüzük</li>
-          <li>Küpe</li>
-          <li>Hediye</li>
-          <li>setler</li>
+          <li
+            v-for="(kategori, index) in kategoriler"
+            :key="index"
+            @click="routeToCategory(kategori.key)"
+          >
+            {{ kategori.name }}
+          </li>
         </ul>
       </div>
       <div class="col-md-3">
@@ -43,12 +43,28 @@
 
 <script>
 export default {
+  data() {
+    return {
+      kategoriler: [
+        { name: "indirim", key: "home" },
+        { name: "Kolye", key: "kolye" },
+        { name: "Bileklik", key: "bileklik" },
+        { name: "Yüzük", key: "yuzuk" },
+        { name: "Küpe", key: "kupe" },
+        { name: "Hediye", key: "hediye" },
+        { name: "Setler", key: "setler" },
+      ],
+    };
+  },
   methods: {
     contactUs() {
       this.$router.push({ name: "about" });
     },
     aboutUs() {
       this.$router.push({ name: "aboutus" });
+    },
+    routeToCategory(key) {
+      this.$router.push({ name: "products", params: { key: key } });
     },
   },
 };
