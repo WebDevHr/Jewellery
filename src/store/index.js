@@ -194,7 +194,7 @@ export default new Vuex.Store({
   },
   getters: {
     getIndirim: (state) => {
-      return state.products.filter((product) => product.type % 2 == 0);
+      return state.products.filter((product) => product.id % 2);
     },
     getKolye: (state) => {
       return state.products.filter((product) => product.type == "kolye");

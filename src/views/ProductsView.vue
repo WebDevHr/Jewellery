@@ -1,7 +1,11 @@
 <template>
-  <div class="container">
-    <h1 v-if="products" class="my-5">Ürünler</h1>
-    <h1 v-else>Bir ürün bu Kategoriye ait bulunmadı</h1>
+  <div class="container my-5">
+    <div v-if="products.length == 0">
+      <h3>Maalesef,</h3>
+      <h5>Bu Kategoriye ait bir ürün bulunmadı</h5>
+      <div>Ana Sayfaya Geri dönmek için Buaray tıklayın</div>
+    </div>
+
     <div class="row">
       <div
         class="col-md-4 mb-4"
@@ -33,6 +37,7 @@ export default {
   },
   computed: {
     ...mapGetters([
+      "getIndirim",
       "getKolye",
       "getBileklik",
       "getYuzuk",
@@ -44,8 +49,9 @@ export default {
       return this.$route.params.key;
     },
     products() {
-      console.log(this.$route.params.key);
-      if (this.key == "kolye") {
+      if (this.key == "indirim") {
+        return this.getIndirim;
+      } else if (this.key == "kolye") {
         return this.getKolye;
       } else if (this.key == "bileklik") {
         return this.getBileklik;
