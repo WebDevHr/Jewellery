@@ -69,7 +69,7 @@ export default {
 }
 .parallax-container {
   height: 500px; /* set the desired height of your parallax effect */
-  background-image: url("@/assets/pictures/parallax-image.webp");
+  background-image: url("@/assets/pictures/parallax-image.png");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
