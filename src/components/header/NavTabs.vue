@@ -28,7 +28,7 @@
           <router-link
             class="nav-link active text fontFamilyInstrumentSerif"
             aria-current="page"
-            :to="{ name: 'products' }"
+            :to="{ name: 'products', params: 'indirim' }"
             @click="goToRelated()"
             ><p class="color mb-0">İndirim</p>
           </router-link>
@@ -36,7 +36,7 @@
         <li class="nav-item my-3 item">
           <router-link
             class="nav-link fontFamilyInstrumentSerif"
-            to="/about"
+            :to="{ name: 'products', params: 'indirim' }"
             @click="goToRelated()"
             ><p class="color mb-0">Kolye</p></router-link
           >
@@ -44,7 +44,7 @@
         <li class="nav-item my-3 item">
           <router-link
             class="nav-link fontFamilyInstrumentSerif"
-            to="/about"
+            :to="{ name: 'products', params: 'bileklik' }"
             @click="goToRelated()"
             ><p class="color mb-0">Bileklik</p></router-link
           >
@@ -52,7 +52,7 @@
         <li class="nav-item my-3 item">
           <router-link
             class="nav-link fontFamilyInstrumentSerif"
-            to="/about"
+            :to="{ name: 'products', params: 'yuzuk' }"
             @click="goToRelated()"
             ><p class="color mb-0">Yüzük</p>
           </router-link>
@@ -60,7 +60,7 @@
         <li class="nav-item my-3 item">
           <router-link
             class="nav-link fontFamilyInstrumentSerif"
-            to="/about"
+            :to="{ name: 'products', params: 'kupe' }"
             @click="goToRelated()"
             ><p class="color mb-0">Küpe</p>
           </router-link>
@@ -68,7 +68,7 @@
         <li class="nav-item my-3 item">
           <router-link
             class="nav-link fontFamilyInstrumentSerif"
-            to="/about"
+            :to="{ name: 'products', params: 'hediye' }"
             @click="goToRelated()"
             ><p class="color mb-0">Hediye</p>
           </router-link>
@@ -76,7 +76,7 @@
         <li class="nav-item my-3 item">
           <router-link
             class="nav-link fontFamilyInstrumentSerif"
-            to="/about"
+            :to="{ name: 'products', params: 'setler' }"
             @click="goToRelated()"
             ><p class="color mb-0">Setler</p>
           </router-link>
