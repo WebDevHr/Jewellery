@@ -27,8 +27,8 @@
         <div
           class="col-xl-4 d-flex justify-content-center align-items-center flex-column order-1 order-lg-2 pe-xl-5"
         >
-          <h2>{{ title }}</h2>
-          <p>{{ description }}</p>
+          <h2 class="fw-bold">{{ title }}</h2>
+          <p class="fw-bold">{{ description }}</p>
         </div>
       </div>
     </div>

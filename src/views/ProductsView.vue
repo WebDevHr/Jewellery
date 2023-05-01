@@ -1,9 +1,15 @@
 <template>
   <div class="container my-5">
-    <div v-if="products.length == 0">
+    <div
+      class="noFoundHeight d-flex flex-column justify-content-center align-items-center"
+      v-if="products.length == 0"
+    >
       <h3>Maalesef,</h3>
       <h5>Bu Kategoriye ait bir ürün bulunmadı</h5>
-      <div>Ana Sayfaya Geri dönmek için Buaray tıklayın</div>
+      <router-link class="mt-3 textColor pointer" :to="{ name: 'home' }">
+        Ana Sayfaya Geri Dönmek için Buaray Tıklayın
+        <i class="fa-solid fa-arrow-rotate-left ms-1"></i>
+      </router-link>
     </div>
 
     <div class="row">
@@ -70,3 +76,23 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.pointer {
+  cursor: pointer;
+}
+
+.textColor {
+  color: rgb(154, 153, 153);
+}
+
+.textColor:hover {
+  color: rgb(38, 38, 38);
+}
+
+@media screen and (min-width: 768px) {
+  .noFoundHeight {
+    height: 250px;
+  }
+}
+</style>

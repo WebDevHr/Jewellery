@@ -24,7 +24,7 @@
       <ul
         class="nav d-flex justify-content-center flex-column flex-md-row fs-5 letterSpacing"
       >
-        <li class="nav-item my-3 item">
+        <li class="nav-item my-3 mx-2 item">
           <router-link
             class="nav-link active text fontFamilyInstrumentSerif"
             aria-current="page"
@@ -33,7 +33,7 @@
             ><p class="color mb-0">İndirim</p>
           </router-link>
         </li>
-        <li class="nav-item my-3 item">
+        <li class="nav-item my-3 mx-2 item">
           <router-link
             class="nav-link fontFamilyInstrumentSerif"
             :to="{ name: 'products', params: { key: 'kolye' } }"
@@ -41,7 +41,7 @@
             ><p class="color mb-0">Kolye</p></router-link
           >
         </li>
-        <li class="nav-item my-3 item">
+        <li class="nav-item my-3 mx-2 item">
           <router-link
             class="nav-link fontFamilyInstrumentSerif"
             :to="{ name: 'products', params: { key: 'bileklik' } }"
@@ -49,7 +49,7 @@
             ><p class="color mb-0">Bileklik</p></router-link
           >
         </li>
-        <li class="nav-item my-3 item">
+        <li class="nav-item my-3 mx-2 item">
           <router-link
             class="nav-link fontFamilyInstrumentSerif"
             :to="{ name: 'products', params: { key: 'yuzuk' } }"
@@ -57,7 +57,7 @@
             ><p class="color mb-0">Yüzük</p>
           </router-link>
         </li>
-        <li class="nav-item my-3 item">
+        <li class="nav-item my-3 mx-2 item">
           <router-link
             class="nav-link fontFamilyInstrumentSerif"
             :to="{ name: 'products', params: { key: 'kupe' } }"
@@ -65,7 +65,7 @@
             ><p class="color mb-0">Küpe</p>
           </router-link>
         </li>
-        <li class="nav-item my-3 item">
+        <li class="nav-item my-3 mx-2 item">
           <router-link
             class="nav-link fontFamilyInstrumentSerif"
             :to="{ name: 'products', params: { key: 'hediye' } }"
@@ -73,7 +73,7 @@
             ><p class="color mb-0">Hediye</p>
           </router-link>
         </li>
-        <li class="nav-item my-3 item">
+        <li class="nav-item my-3 mx-2 item">
           <router-link
             class="nav-link fontFamilyInstrumentSerif"
             :to="{ name: 'products', params: { key: 'setler' } }"
@@ -164,6 +164,7 @@ export default {
   z-index: 1;
   padding: 10px;
   color: rgb(99, 132, 14);
+  letter-spacing: 3px;
   text-decoration: none;
   font-weight: 700;
 }
