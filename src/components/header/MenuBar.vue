@@ -24,7 +24,9 @@
       <div class="px-2 mx-2 fs-3">
         <i class="fas fa-user"></i>
       </div>
-      <div class="fontFamilyInstrumentSerif font-size color-hover">Profil</div>
+      <div class="fontFamilyInstrumentSerif font-size color-hover">
+        Giriş yap
+      </div>
     </div>
   </div>
 </template>
