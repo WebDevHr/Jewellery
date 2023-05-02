@@ -7,7 +7,12 @@
           <li
             v-for="(kategori, index) in kategoriler"
             :key="index"
-            @click="routeToCategory(kategori.key)"
+            @click="
+              () => {
+                routeToCategory(kategori.key);
+                scrollToTop();
+              }
+            "
           >
             {{ kategori.name }}
           </li>
@@ -42,7 +47,9 @@
 </template>
 
 <script>
+import scrollToTopMixin from "@/mixin/scrollToTopMixin.js";
 export default {
+  mixins: [scrollToTopMixin],
   data() {
     return {
       kategoriler: [
