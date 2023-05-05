@@ -5,7 +5,9 @@
       <HeaderComp />
       <NavTabs />
     </nav>
-    <router-view />
+    <transition name="fade" mode="out-in">
+      <router-view :key="$route.fullPath" />
+    </transition>
     <LinksComp />
     <FooterComp />
   </div>
@@ -88,5 +90,19 @@ h4 {
 p {
   font-family: "Lora", sans-serif;
   font-size: 14px;
+}
+
+/** Transitions **/
+.fade-enter {
+  opacity: 0;
+  translate: -30px 0px;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.4s ease;
+}
+.fade-leave-to {
+  opacity: 0;
+  translate: -30px 0px;
 }
 </style>
