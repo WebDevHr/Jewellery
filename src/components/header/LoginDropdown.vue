@@ -83,6 +83,6 @@ export default {
 }
 
 .liWidth:hover {
-  background-color: rgb(99, 132, 14);
+  background-color: #bbbd15;
 }
 </style>

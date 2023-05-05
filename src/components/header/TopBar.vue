@@ -20,7 +20,11 @@ export default {};
   background-position: -100% center;
 }
 .barBackgroundColor:hover {
-  background-color: #676905; /* Set the new background color when hovered */
+  background-color: rgb(
+    99,
+    132,
+    14
+  ); /* Set the new background color when hovered */
   background-position: 100% center; /* Slide the background in from the right */
 }
 </style>
