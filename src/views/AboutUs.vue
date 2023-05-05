@@ -1,38 +1,41 @@
 <template>
   <div class="about-us">
-    <div class="container">
-      <h2>Hakkımızda</h2>
+    <div class="container fontFamilyLora">
+      <h2 class="fontFamilyCinzel">Hakkımızda</h2>
       <div class="row">
-        <div class="col-md-6">
-          <p>
-            Mücevher tutkunlarından oluşan bir ekip olarak, sizlere en kaliteli
-            mücevherleri sunmak için çalışıyoruz. Yakında başlatacağımız
-            E-Ticaret sitemizle bu tutkumuzu sizlerle paylaşacağız.
-          </p>
-          <p>
-            E-Ticaret sitemiz sadece bir başlangıç. Gelecekte daha da büyümek ve
-            işimizi genişletmek için kararlıyız. En seçkin mücevherleri dünyanın
-            en yetenekli tasarımcılarından getiriyoruz. Zamansız klasiklerden
-            son trend parçalara kadar her tarz ve her fırsat için bir şeyler
-            bulabileceksiniz. Müşteri memnuniyeti bizim için önemlidir ve
-            alışveriş deneyiminizi olabildiğince kolay ve keyifli hale getirmeye
-            kararlıyız.
-          </p>
-          <p>
-            Ama E-Ticaret sitemiz sadece bir başlangıç. Büyümeye ve işimizi
-            genişletmeye kararlıyız. Yakın gelecekte daha fazla şube açmayı ve
-            güvenilir bir mücevher kaynağı haline gelmeyi hedefliyoruz.
-          </p>
-          <p>
-            Sitemizi tercih ettiğiniz için teşekkür ederiz ve gelecek yıllarda
-            da sizlere hizmet etmek için sabırsızlanıyoruz!
-          </p>
+        <div class="col-md-6 justify">
+          <div class="me-lg-3 text-indent">
+            <p>
+              Mücevher tutkunlarından oluşan bir ekip olarak, sizlere en
+              kaliteli mücevherleri sunmak için çalışıyoruz. Yakında
+              başlatacağımız E-Ticaret sitemizle bu tutkumuzu sizlerle
+              paylaşacağız.
+            </p>
+            <p>
+              E-Ticaret sitemiz sadece bir başlangıç. Gelecekte daha da büyümek
+              ve işimizi genişletmek için kararlıyız. En seçkin mücevherleri
+              dünyanın en yetenekli tasarımcılarından getiriyoruz. Zamansız
+              klasiklerden son trend parçalara kadar her tarz ve her fırsat için
+              bir şeyler bulabileceksiniz. Müşteri memnuniyeti bizim için
+              önemlidir ve alışveriş deneyiminizi olabildiğince kolay ve keyifli
+              hale getirmeye kararlıyız.
+            </p>
+            <p>
+              Ama E-Ticaret sitemiz sadece bir başlangıç. Büyümeye ve işimizi
+              genişletmeye kararlıyız. Yakın gelecekte daha fazla şube açmayı ve
+              güvenilir bir mücevher kaynağı haline gelmeyi hedefliyoruz.
+            </p>
+            <p>
+              Sitemizi tercih ettiğiniz için teşekkür ederiz ve gelecek yıllarda
+              da sizlere hizmet etmek için sabırsızlanıyoruz!
+            </p>
+          </div>
         </div>
         <div class="col-md-6">
           <img
             src="@/assets/pictures/aboutus.jpg"
             alt="Jewelry Store"
-            class="img-fluid"
+            class="img-fluid ms-lg-3"
           />
         </div>
       </div>
@@ -63,5 +66,13 @@
   height: auto;
   margin: 0 auto;
   display: block;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.text-indent p {
+  text-indent: 1.5em;
 }
 </style>

@@ -1,30 +1,32 @@
 <template>
-  <div class="container my-5">
-    <div
-      class="noFoundHeight d-flex flex-column justify-content-center align-items-center"
-      v-if="products.length == 0"
-    >
-      <h3>Maalesef,</h3>
-      <h5>Bu Kategoriye ait bir ürün bulunmadı</h5>
-      <router-link class="mt-3 textColor pointer" :to="{ name: 'home' }">
-        Ana Sayfaya Geri Dönmek için Buaray Tıklayın
-        <i class="fa-solid fa-arrow-rotate-left ms-1"></i>
-      </router-link>
-    </div>
-
-    <div class="row">
+  <div class="pageBackgroundColor">
+    <div class="container-xl py-5">
       <div
-        class="col-md-4 mb-4"
-        v-for="(product, index) in products"
-        :key="index"
+        class="noFoundHeight d-flex flex-column justify-content-center align-items-center"
+        v-if="products.length == 0"
       >
-        <ProductCard
-          :productId="product.id"
-          :image="product.image"
-          :title="product.title"
-          :description="product.description"
-          :price="product.price"
-        />
+        <h3>Maalesef,</h3>
+        <h5>Bu Kategoriye ait bir ürün bulunmadı</h5>
+        <router-link class="mt-3 textColor pointer" :to="{ name: 'home' }">
+          Ana Sayfaya Geri Dönmek için Buaray Tıklayın
+          <i class="fa-solid fa-arrow-rotate-left ms-1"></i>
+        </router-link>
+      </div>
+
+      <div class="row">
+        <div
+          class="col-md-6 col-lg-4 col-xl-3 mb-4 d-flex justify-content-center align-items-center"
+          v-for="(product, index) in products"
+          :key="index"
+        >
+          <ProductCard
+            :productId="product.id"
+            :image="product.image"
+            :title="product.title"
+            :description="product.description"
+            :price="product.price"
+          />
+        </div>
       </div>
     </div>
   </div>
@@ -78,6 +80,10 @@ export default {
 </script>
 
 <style scoped>
+.pageBackgroundColor {
+  background-color: #f8f9fa;
+}
+
 .pointer {
   cursor: pointer;
 }

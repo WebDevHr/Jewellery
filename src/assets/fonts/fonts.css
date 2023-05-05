@@ -22,5 +22,29 @@
     font-family: "GreyQo";
     src: url("@/assets/fonts/GreyQo-Regular.ttf") format("truetype");
   }
+  @font-face {
+    font-family: "AbrilFatface";
+    src: url("@/assets/fonts/AbrilFatface-Regular.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "CormorantGaramond";
+    src: url("@/assets/fonts/CormorantGaramond-Regular.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Lato";
+    src: url("@/assets/fonts/Lato-Regular.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Montserrat-VariableFont_wght";
+    src: url("@/assets/fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "PlayfairDisplay";
+    src: url("@/assets/fonts/PlayfairDisplay-Regular.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Lora";
+    src: url("@/assets/fonts/Lora-Regular.ttf") format("truetype");
+  }
   
   

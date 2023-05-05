@@ -52,6 +52,25 @@ export default {
 .fontFamilyGreyQo {
   font-family: "GreyQo", sans-serif;
 }
+.fontFamilyAbrilFatface {
+  font-family: "AbrilFatface", sans-serif;
+}
+.fontFamilyCormorantGaramound {
+  font-family: "CormorantGaramound", sans-serif;
+}
+.fontFamilyLato {
+  font-family: "Lato", sans-serif;
+}
+.fontFamilyMontserrat-VariableFont_wght {
+  font-family: "Montserrat-VariableFont_wght", sans-serif;
+}
+.fontFamilyPlayfairDisplay {
+  font-family: "PlayfairDisplay", sans-serif;
+}
+.fontFamilyLora {
+  font-family: "Lora", sans-serif;
+}
+
 .letterSpacing {
   letter-spacing: 0.08em;
 }

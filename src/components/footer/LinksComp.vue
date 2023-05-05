@@ -53,7 +53,7 @@ export default {
   data() {
     return {
       kategoriler: [
-        { name: "indirim", key: "home" },
+        { name: "indirim", key: "indirim" },
         { name: "Kolye", key: "kolye" },
         { name: "Bileklik", key: "bileklik" },
         { name: "Yüzük", key: "yuzuk" },

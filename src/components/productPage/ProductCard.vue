@@ -1,6 +1,11 @@
 <template>
-  <div class="card clickable" @click="$router.push('/product/' + productId)">
-    <img :src="image" class="card-img-top" alt="Product image" />
+  <div
+    class="card clickable rounded-top overflowHiden"
+    @click="$router.push('/product/' + productId)"
+  >
+    <div class="imageContainer">
+      <img :src="image" class="card-img-top" alt="Product image" />
+    </div>
     <div class="card-body">
       <h5 class="card-title">{{ title }}</h5>
       <p class="card-text">{{ description }}</p>
@@ -41,10 +46,36 @@ export default {
   border-radius: 0;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.3s ease-in-out;
+  width: 400px;
 }
 
 .card:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover img {
+  transform: scale(1.2);
+}
+
+.imageContainer {
+  width: 400px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+
+.overflowHiden {
+  overflow: hidden;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease-out;
+}
+
+.imageContainer:hover img {
+  transform: scale(1.2);
 }
 
 .card-img-top {

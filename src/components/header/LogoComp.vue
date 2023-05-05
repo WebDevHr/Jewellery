@@ -1,11 +1,14 @@
 <template>
-  <div class="d-flex justify-content-center align-items-center my-3 my-lg-5">
+  <div class="d-flex justify-content-center align-items-center my-3 my-lg-4">
     <transition appear>
       <div
-        class="d-flex justify-content-center align-items-center rounded size-of-logo logo cursorPointer size font-size fontFamilyGreyQo px-3 px-lg-5"
+        class="d-flex flex-column justify-content-center align-items-center rounded size-of-logo logo cursorPointer size font-size fontFamilyPlayfairDisplay px-3 px-lg-5"
         @click="goToHome"
       >
-        Alberello Jewellery
+        <h1 class="fontFamilyPlayfairDisplay h1LetterSpacing h1Style">
+          Alberello
+        </h1>
+        <h3 class="h3Style">Jewellery</h3>
         <!-- <img
           class="rounded cover"
           src="@/assets/pictures/banner.png"
@@ -37,18 +40,24 @@ export default {
 }
 .logo:hover {
   color: rgb(0, 0, 0);
-  translate: 0px -3px;
-  transform: scale(1.1);
 }
 .cover {
   object-fit: fill;
 }
 .size {
-  height: 80px;
+  height: 100px;
 }
-.font-size {
+
+.h1LetterSpacing {
+  letter-spacing: 10px;
+}
+
+.h1Style {
+  color: rgb(99, 132, 14);
   font-size: 60px;
-  word-spacing: 20px;
-  font-weight: bolder;
+}
+
+.h3Style {
+  color: rgb(225, 225, 16);
 }
 </style>

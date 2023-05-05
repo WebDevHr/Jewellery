@@ -19,20 +19,32 @@
       </div>
     </div>
     <div
-      class="mx-2 color d-flex flex-column justify-content-center align-items-center"
+      class="mx-2 d-flex color flex-column justify-content-center align-items-center"
     >
-      <div class="px-2 mx-2 fs-3">
-        <i class="fas fa-user"></i>
-      </div>
-      <div class="fontFamilyInstrumentSerif font-size color-hover">
-        Giriş yap
-      </div>
+      <LoginDropdown
+        ><template #buttonText>
+          <div class="px-2 mx-2 fs-3">
+            <i class="fas fa-user"></i>
+          </div>
+          <div class="fontFamilyInstrumentSerif font-size">Giriş yap</div>
+        </template>
+      </LoginDropdown>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+import LoginDropdown from "@/components/header/LoginDropdown.vue";
+export default {
+  components: {
+    LoginDropdown,
+  },
+  methods: {
+    login() {
+      this.$router.push({ name: "login" });
+    },
+  },
+};
 </script>
 
 <style scoped>
@@ -43,7 +55,6 @@ export default {};
 .color:hover,
 .color:hover .color-hover {
   color: rgb(39, 39, 39);
-  scale: 1.05;
   cursor: pointer;
 }
 .font-size {
