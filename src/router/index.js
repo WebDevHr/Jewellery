@@ -1,6 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import HomeView from "../views/HomeView.vue";
+import store from "@/store";
 
 Vue.use(VueRouter);
 
@@ -49,8 +50,31 @@ const routes = [
   {
     path: "/products/:key",
     name: "products",
+    props: true,
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/ProductsView.vue"),
+  },
+  {
+    path: "/product/:id",
+    name: "product",
+    props: true,
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/ProductView.vue"),
+    beforeEnter(routeTo, routeFrom, next) {
+      store
+        .dispatch("fetchProduct", routeTo.params.id)
+        .then((product) => {
+          routeTo.params.product = product;
+          next();
+        })
+        .catch((error) => {
+          if (error.response && error.response.status == 404) {
+            next({ name: "404", params: { resource: "event" } });
+          } else {
+            next({ name: "network-issue" });
+          }
+        });
+    },
   },
 ];
 

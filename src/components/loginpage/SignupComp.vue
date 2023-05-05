@@ -34,7 +34,7 @@
             />
           </div>
           <div class="form-group">
-            <label for="password">Password</label>
+            <label for="password">Şifre</label>
             <input
               type="password"
               class="form-control"
@@ -43,7 +43,7 @@
             />
           </div>
           <div class="form-group">
-            <label for="confirmPassword">Confirm password</label>
+            <label for="confirmPassword">Şifre tekrarı</label>
             <input
               type="password"
               class="form-control"

@@ -7,7 +7,7 @@
       <img :src="image" class="card-img-top" alt="Product image" />
     </div>
     <div class="card-body">
-      <h5 class="card-title">{{ title }}</h5>
+      <h3 class="card-title">{{ title }}</h3>
       <p class="card-text">{{ description }}</p>
     </div>
   </div>

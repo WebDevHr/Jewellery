@@ -25,6 +25,7 @@
             :title="product.title"
             :description="product.description"
             :price="product.price"
+            :to="{ name: 'product', params: { key: product.id } }"
           />
         </div>
       </div>

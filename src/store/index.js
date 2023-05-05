@@ -12,6 +12,7 @@ export default new Vuex.Store({
         image: require("@/assets/pictures/kolye/1.jpg"),
         title: "Minimal altın kolye",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        ratings: 4,
         price: 1000,
       },
       {
@@ -20,6 +21,7 @@ export default new Vuex.Store({
         image: require("@/assets/pictures/kolye/2.jpg"),
         title: "Minimal altın kolye",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        ratings: 4.25,
         price: 1000,
       },
       {
@@ -28,6 +30,7 @@ export default new Vuex.Store({
         image: require("@/assets/pictures/kolye/3.webp"),
         title: "Altın kolye",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        ratings: 5,
         price: 1000,
       },
       {
@@ -36,6 +39,7 @@ export default new Vuex.Store({
         image: require("@/assets/pictures/kolye/4.webp"),
         title: "Minimal altın kolye",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        ratings: 3.5,
         price: 1000,
       },
       {
@@ -44,6 +48,7 @@ export default new Vuex.Store({
         image: require("@/assets/pictures/kolye/5.jpg"),
         title: "Minimal altın kolye",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        ratings: 2,
         price: 1000,
       },
       {
@@ -52,6 +57,7 @@ export default new Vuex.Store({
         image: require("@/assets/pictures/kolye/6.jpg"),
         title: "Minimal altın kolye",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        ratings: 3,
         price: 1000,
       },
       {
@@ -60,6 +66,7 @@ export default new Vuex.Store({
         image: require("@/assets/pictures/bileklik/1.jpg"),
         title: "Cartier Kelepçe",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        ratings: 4.5,
         price: 2000,
       },
       {
@@ -68,6 +75,7 @@ export default new Vuex.Store({
         image: require("@/assets/pictures/bileklik/2.webp"),
         title: "Cartier Kelepçe",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        ratings: 4.25,
         price: 2000,
       },
       {
@@ -76,6 +84,7 @@ export default new Vuex.Store({
         image: require("@/assets/pictures/bileklik/3.jpg"),
         title: "Cartier Kelepçe",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        ratings: 4.5,
         price: 2000,
       },
       {
@@ -84,6 +93,7 @@ export default new Vuex.Store({
         image: require("@/assets/pictures/bileklik/4.jpg"),
         title: "Cartier Kelepçe",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        ratings: 4.75,
         price: 2000,
       },
       {
@@ -92,6 +102,7 @@ export default new Vuex.Store({
         image: require("@/assets/pictures/yuzuk/1.png"),
         title: "Tek taş yüzük",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        ratings: 4.5,
         price: 3000,
       },
       {
@@ -100,6 +111,7 @@ export default new Vuex.Store({
         image: require("@/assets/pictures/yuzuk/2.jpg"),
         title: "Eklem yüzüğü",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        ratings: 5,
         price: 3000,
       },
       {
@@ -108,6 +120,7 @@ export default new Vuex.Store({
         image: require("@/assets/pictures/yuzuk/3.webp"),
         title: "Eklem yüzüğü",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        ratings: 4,
         price: 3000,
       },
       {
@@ -116,6 +129,7 @@ export default new Vuex.Store({
         image: require("@/assets/pictures/yuzuk/4.webp"),
         title: "Minimal Baget Yüzük",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        ratings: 4,
         price: 3000,
       },
       {
@@ -124,6 +138,7 @@ export default new Vuex.Store({
         image: require("@/assets/pictures/yuzuk/5.jpg"),
         title: "Baget Yüzük",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        ratings: 3.75,
         price: 3000,
       },
       {
@@ -132,6 +147,7 @@ export default new Vuex.Store({
         image: require("@/assets/pictures/yuzuk/6.jpeg"),
         title: "şövalye eklem yuzugu",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        ratings: 3.25,
         price: 3000,
       },
       {
@@ -140,6 +156,7 @@ export default new Vuex.Store({
         image: require("@/assets/pictures/yuzuk/7.jpg"),
         title: "Baget Yüzük",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        ratings: 3,
         price: 3000,
       },
       {
@@ -148,6 +165,7 @@ export default new Vuex.Store({
         image: require("@/assets/pictures/yuzuk/8.jpg"),
         title: "Eklem yüzüğü",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        ratings: 4,
         price: 3000,
       },
       {
@@ -156,6 +174,7 @@ export default new Vuex.Store({
         image: require("@/assets/pictures/yuzuk/9.avif"),
         title: "şövalye eklem yüzük",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        ratings: 5,
         price: 3000,
       },
       {
@@ -164,6 +183,7 @@ export default new Vuex.Store({
         image: require("@/assets/pictures/kupe/1.jpeg"),
         title: "Piercing Küpe",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        ratings: 2,
         price: 4000,
       },
       {
@@ -172,6 +192,7 @@ export default new Vuex.Store({
         image: require("@/assets/pictures/kupe/2.webp"),
         title: "Piercing Küpe",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        ratings: 3.5,
         price: 4000,
       },
       {
@@ -180,6 +201,7 @@ export default new Vuex.Store({
         image: require("@/assets/pictures/kupe/3.webp"),
         title: "Piercing Küpe",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        ratings: 4,
         price: 4000,
       },
       {
@@ -188,6 +210,7 @@ export default new Vuex.Store({
         image: require("@/assets/pictures/setler/1.webp"),
         title: "Tiffany Set",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        ratings: 4,
         price: 6000,
       },
     ],
@@ -216,6 +239,11 @@ export default new Vuex.Store({
     },
   },
   mutations: {},
-  actions: {},
+  actions: {
+    fetchProduct({ state }, id) {
+      let product = state.products.filter((product) => product.id == id);
+      return product;
+    },
+  },
   modules: {},
 });

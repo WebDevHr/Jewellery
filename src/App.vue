@@ -77,4 +77,16 @@ export default {
 .cursorPointer {
   cursor: pointer;
 }
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Cinzel", sans-serif;
+  font-weight: bolder;
+}
+
+p {
+  font-family: "Lora", sans-serif;
+  font-size: 14px;
+}
 </style>

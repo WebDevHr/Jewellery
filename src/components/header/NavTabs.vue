@@ -30,7 +30,7 @@
             aria-current="page"
             :to="{ name: 'products', params: { key: 'indirim' } }"
             @click="goToRelated()"
-            ><p class="color mb-0">İndirim</p>
+            ><div class="color mb-0">İndirim</div>
           </router-link>
         </li>
         <li class="nav-item my-3 mx-2 item">
@@ -38,7 +38,7 @@
             class="nav-link fontFamilyInstrumentSerif"
             :to="{ name: 'products', params: { key: 'kolye' } }"
             @click="goToRelated()"
-            ><p class="color mb-0">Kolye</p></router-link
+            ><div class="color mb-0">Kolye</div></router-link
           >
         </li>
         <li class="nav-item my-3 mx-2 item">
@@ -46,7 +46,7 @@
             class="nav-link fontFamilyInstrumentSerif"
             :to="{ name: 'products', params: { key: 'bileklik' } }"
             @click="goToRelated()"
-            ><p class="color mb-0">Bileklik</p></router-link
+            ><div class="color mb-0">Bileklik</div></router-link
           >
         </li>
         <li class="nav-item my-3 mx-2 item">
@@ -54,7 +54,7 @@
             class="nav-link fontFamilyInstrumentSerif"
             :to="{ name: 'products', params: { key: 'yuzuk' } }"
             @click="goToRelated()"
-            ><p class="color mb-0">Yüzük</p>
+            ><div class="color mb-0">Yüzük</div>
           </router-link>
         </li>
         <li class="nav-item my-3 mx-2 item">
@@ -62,7 +62,7 @@
             class="nav-link fontFamilyInstrumentSerif"
             :to="{ name: 'products', params: { key: 'kupe' } }"
             @click="goToRelated()"
-            ><p class="color mb-0">Küpe</p>
+            ><div class="color mb-0">Küpe</div>
           </router-link>
         </li>
         <li class="nav-item my-3 mx-2 item">
@@ -70,7 +70,7 @@
             class="nav-link fontFamilyInstrumentSerif"
             :to="{ name: 'products', params: { key: 'hediye' } }"
             @click="goToRelated()"
-            ><p class="color mb-0">Hediye</p>
+            ><div class="color mb-0">Hediye</div>
           </router-link>
         </li>
         <li class="nav-item my-3 mx-2 item">
@@ -78,7 +78,7 @@
             class="nav-link fontFamilyInstrumentSerif"
             :to="{ name: 'products', params: { key: 'setler' } }"
             @click="goToRelated()"
-            ><p class="color mb-0">Setler</p>
+            ><div class="color mb-0">Setler</div>
           </router-link>
         </li>
       </ul>
