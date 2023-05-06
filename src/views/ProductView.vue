@@ -1,27 +1,29 @@
 <template>
-  <div
-    class="product-view container justify-content-between align-items-center my-5"
-  >
-    <div class="product-image col-lg-6 border p-4 rounded">
-      <img :src="item.image" :alt="item.title" />
-    </div>
-    <div class="product-info col-lg-6 mx-lg-5 my-lg-5">
-      <h2 class="product-title">{{ item.title }}</h2>
-      <p class="product-description">{{ item.description }}</p>
-      <p class="product-price">{{ item.price }} TL</p>
-      <div class="product-rating">
-        <span
-          class="star"
-          v-for="i in 5"
-          :key="i"
-          :class="{ filled: i <= item.ratings }"
-          >&#9733;</span
-        >
+  <div class="backgroundColor">
+    <div
+      class="product-view container justify-content-center justify-content-xl-between align-items-center py-5"
+    >
+      <div class="product-image col-lg-6 border p-4 rounded">
+        <img :src="item.image" :alt="item.title" />
       </div>
-      <BaseButton :label="label" class="mt-5" />
-    </div>
-    <div class="col-12 text-start my-lg-5">
-      <BaseComment />
+      <div class="product-info col-lg-6 mx-lg-5 my-lg-5">
+        <h2 class="product-title">{{ item.title }}</h2>
+        <p class="product-description">{{ item.description }}</p>
+        <p class="product-price">{{ item.price }} TL</p>
+        <div class="product-rating">
+          <span
+            class="star"
+            v-for="i in 5"
+            :key="i"
+            :class="{ filled: i <= item.ratings }"
+            >&#9733;</span
+          >
+        </div>
+        <BaseButton :label="label" class="mt-5" />
+      </div>
+      <div class="col-12 text-start my-lg-5">
+        <BaseComment />
+      </div>
     </div>
   </div>
 </template>
@@ -125,5 +127,8 @@ export default {
 
 .comment-text {
   margin: 0;
+}
+.backgroundColor {
+  background-color: #f7f7f7;
 }
 </style>

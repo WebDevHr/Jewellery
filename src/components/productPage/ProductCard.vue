@@ -1,40 +1,49 @@
 <template>
   <div
     class="card clickable rounded-top overflowHiden"
-    @click="$router.push('/product/' + productId)"
+    @click="$router.push('/product/' + product.id)"
   >
     <div class="imageContainer">
-      <img :src="image" class="card-img-top" alt="Product image" />
+      <img :src="product.image" class="card-img-top" alt="Product image" />
+      <favorite-heart
+        :is-active="isFavorite(product)"
+        @toggle="toggleFavorite(product)"
+      ></favorite-heart>
     </div>
     <div class="card-body">
-      <h3 class="card-title">{{ title }}</h3>
-      <p class="card-text">{{ description }}</p>
+      <h3 class="card-title">{{ product.title }}</h3>
+      <p class="card-text">{{ product.description }}</p>
     </div>
   </div>
 </template>
 
 <script>
+import FavoriteHeart from "@/components/productPage/FavoriteHeart";
 export default {
   props: {
-    productId: {
-      type: Number,
+    product: {
+      type: Object,
       required: true,
     },
-    image: {
-      type: String,
-      required: true,
+  },
+  components: {
+    FavoriteHeart,
+  },
+  computed: {
+    favorites() {
+      return this.$store.state.user.favorites;
     },
-    title: {
-      type: String,
-      required: true,
+  },
+  methods: {
+    isFavorite(product) {
+      return this.favorites && this.favorites.includes(product.id);
     },
-    description: {
-      type: String,
-      required: true,
-    },
-    price: {
-      type: Number,
-      required: true,
+    toggleFavorite(product) {
+      if (this.isFavorite(product)) {
+        this.$store.commit("REMOVE_FAVORITE", product.id);
+      } else {
+        this.$store.commit("ADD_FAVORITE", product.id);
+      }
     },
   },
 };

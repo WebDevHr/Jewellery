@@ -20,11 +20,7 @@
           :key="index"
         >
           <ProductCard
-            :productId="product.id"
-            :image="product.image"
-            :title="product.title"
-            :description="product.description"
-            :price="product.price"
+            :product="product"
             :to="{ name: 'product', params: { key: product.id } }"
           />
         </div>

@@ -1,5 +1,5 @@
 <template>
-  <div class="comments">
+  <div class="comments fontFamilyLora">
     <h3>Yorumlar</h3>
     <ul class="comment-list">
       <li v-for="comment in comments" :key="comment.id" class="comment">
@@ -10,7 +10,7 @@
     <form @submit.prevent="submitComment" class="comment-form">
       <h3>Yorum Ekle</h3>
       <div class="form-group">
-        <label for="comment-author">Ad</label>
+        <label for="comment-author" class="ms-2">Ad</label>
         <input
           id="comment-author"
           v-model="newComment.author"
@@ -19,7 +19,7 @@
         />
       </div>
       <div class="form-group">
-        <label for="comment-text">Yorum</label>
+        <label for="comment-text" class="ms-2">Yorum</label>
         <textarea
           id="comment-text"
           v-model="newComment.text"
@@ -27,7 +27,11 @@
           required
         ></textarea>
       </div>
-      <BaseButton type="submit" :label="commentLabel" class="commentButton" />
+      <BaseButton
+        type="submit"
+        :label="commentLabel"
+        class="commentButton ms-1"
+      />
     </form>
   </div>
 </template>
@@ -60,7 +64,6 @@ export default {
     submitComment() {
       // Generate a new ID for the comment
       const newId = Math.max(...this.comments.map((comment) => comment.id)) + 1;
-
       // Add the new comment to the list
       this.comments.push({
         id: newId,
@@ -90,7 +93,7 @@ export default {
 .comment {
   margin-bottom: 1rem;
   padding: 1rem;
-  background-color: #f7f7f7;
+  background-color: #ffffff;
   border-radius: 5px;
 }
 

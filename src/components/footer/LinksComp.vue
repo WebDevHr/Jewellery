@@ -53,7 +53,7 @@ export default {
   data() {
     return {
       kategoriler: [
-        { name: "indirim", key: "indirim" },
+        { name: "indirim", key: "home" },
         { name: "Kolye", key: "kolye" },
         { name: "Bileklik", key: "bileklik" },
         { name: "Yüzük", key: "yuzuk" },
@@ -88,14 +88,14 @@ h3 {
   margin-bottom: 1.5vw;
 }
 ul li {
-  color: rgb(180, 180, 180);
+  color: rgb(134, 134, 134);
   font-weight: 700;
   cursor: pointer;
   transition: all 0.3s;
   margin-bottom: 0.4vw;
 }
 ul li:hover {
-  color: rgb(52, 52, 52);
-  translate: -5px;
+  color: rgb(0, 0, 0);
+  translate: -4px 1px;
 }
 </style>

@@ -1,7 +1,9 @@
 <template>
-  <div>
-    <div class="d-md-none d-flex justify-content-center border">
-      <div class="d-flex justify-content-center align-items-center menuButton">
+  <div class="position">
+    <div class="d-md-none d-flex justify-content-center border-0 border-md">
+      <div
+        class="d-flex justify-content-center align-items-center menuButton border-0 ham"
+      >
         <div
           role="button"
           class="navbar-burger burger"
@@ -24,62 +26,62 @@
       <ul
         class="nav d-flex justify-content-center flex-column flex-md-row fs-5 letterSpacing"
       >
-        <li class="nav-item my-3 mx-2 item">
-          <router-link
-            class="nav-link active text fontFamilyInstrumentSerif"
+        <li class="nav-item my-md-3 my-0 mx-2 item pointer">
+          <div
+            class="nav-link active fontFamilyInstrumentSerif"
             aria-current="page"
-            :to="{ name: 'products', params: { key: 'indirim' } }"
-            @click="goToRelated()"
-            ><div class="color mb-0">İndirim</div>
-          </router-link>
-        </li>
-        <li class="nav-item my-3 mx-2 item">
-          <router-link
-            class="nav-link fontFamilyInstrumentSerif"
-            :to="{ name: 'products', params: { key: 'kolye' } }"
-            @click="goToRelated()"
-            ><div class="color mb-0">Kolye</div></router-link
+            @click="goToRelated('indirim')"
           >
+            <div class="color mb-0">İndirim</div>
+          </div>
         </li>
-        <li class="nav-item my-3 mx-2 item">
-          <router-link
+        <li class="nav-item my-md-3 my-0 mx-2 item pointer">
+          <div
             class="nav-link fontFamilyInstrumentSerif"
-            :to="{ name: 'products', params: { key: 'bileklik' } }"
-            @click="goToRelated()"
-            ><div class="color mb-0">Bileklik</div></router-link
+            @click="goToRelated('kolye')"
           >
+            <div class="color mb-0">Kolye</div>
+          </div>
         </li>
-        <li class="nav-item my-3 mx-2 item">
-          <router-link
+        <li class="nav-item my-md-3 my-0 mx-2 item pointer">
+          <div
             class="nav-link fontFamilyInstrumentSerif"
-            :to="{ name: 'products', params: { key: 'yuzuk' } }"
-            @click="goToRelated()"
-            ><div class="color mb-0">Yüzük</div>
-          </router-link>
+            @click="goToRelated('bileklik')"
+          >
+            <div class="color mb-0">Bileklik</div>
+          </div>
         </li>
-        <li class="nav-item my-3 mx-2 item">
-          <router-link
+        <li class="nav-item my-md-3 my-0 mx-2 item pointer">
+          <div
             class="nav-link fontFamilyInstrumentSerif"
-            :to="{ name: 'products', params: { key: 'kupe' } }"
-            @click="goToRelated()"
-            ><div class="color mb-0">Küpe</div>
-          </router-link>
+            @click="goToRelated('yuzuk')"
+          >
+            <div class="color mb-0">Yüzük</div>
+          </div>
         </li>
-        <li class="nav-item my-3 mx-2 item">
-          <router-link
+        <li class="nav-item my-md-3 my-0 mx-2 item pointer">
+          <div
             class="nav-link fontFamilyInstrumentSerif"
-            :to="{ name: 'products', params: { key: 'hediye' } }"
-            @click="goToRelated()"
-            ><div class="color mb-0">Hediye</div>
-          </router-link>
+            @click="goToRelated('kupe')"
+          >
+            <div class="color mb-0">Küpe</div>
+          </div>
         </li>
-        <li class="nav-item my-3 mx-2 item">
-          <router-link
+        <li class="nav-item my-md-3 my-0 mx-2 item pointer">
+          <div
             class="nav-link fontFamilyInstrumentSerif"
-            :to="{ name: 'products', params: { key: 'setler' } }"
-            @click="goToRelated()"
-            ><div class="color mb-0">Setler</div>
-          </router-link>
+            @click="goToRelated('hediye')"
+          >
+            <div class="color mb-0">Hediye</div>
+          </div>
+        </li>
+        <li class="nav-item my-md-3 my-0 mx-2 item pointer">
+          <div
+            class="nav-link fontFamilyInstrumentSerif"
+            @click="goToRelated('setler')"
+          >
+            <div class="color mb-0">Setler</div>
+          </div>
         </li>
       </ul>
     </div>
@@ -114,8 +116,6 @@ export default {
     toggleNavbar() {
       gsap.set(".item", { opacity: 1, y: 0 });
       if (!this.isActive) {
-        clearTimeout(this.timeoutId);
-        this.isClicked = true;
         gsap.from(".item", {
           duration: 0.8,
           opacity: 0,
@@ -124,9 +124,6 @@ export default {
           stagger: 0.1,
         });
       } else {
-        this.timeoutId = setTimeout(() => {
-          this.isClicked = false;
-        }, 1000);
         gsap.to(".item", {
           duration: 0.8,
           opacity: 0,
@@ -137,13 +134,11 @@ export default {
       }
       this.isActive = !this.isActive;
     },
-    goToRelated() {
-      // let tempRoute = item.toLowerCase().replace(" ", "");
-      // let tempPath = "/" + tempRoute;
-      // if (this.$route.path != tempPath) {
-      //   this.$router.push({ name: tempRoute });
-      // }
-      this.isActive = !this.isActive;
+    goToRelated(temp) {
+      if (window.innerWidth <= 768) {
+        this.isActive = !this.isActive;
+      }
+      this.$router.push({ name: "products", params: { key: temp } });
     },
   },
 };
@@ -260,5 +255,29 @@ export default {
 .menu {
   display: flex;
   justify-content: center;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 769px) {
+  /* .position {
+    position: relative;
+    right: 50px;
+    top: 50px;
+    z-index: 1000;
+  } */
+  .ham {
+    position: absolute;
+    right: 50px;
+    top: 235px;
+    z-index: 1000;
+  }
+  /* .hamWidth {
+    position: absolute;
+    top: 300px;
+    width: 100%;
+  } */
 }
 </style>

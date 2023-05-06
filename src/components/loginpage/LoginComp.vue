@@ -2,7 +2,7 @@
   <div class="login-container fontFamilyPlayfairDisplay">
     <div class="card">
       <div class="card-header">
-        <h4>Log in</h4>
+        <h4>Gİrİş</h4>
       </div>
       <div class="card-body">
         <form>
@@ -48,7 +48,7 @@ export default {
     return {
       username: "",
       password: "",
-      label: "Giriş",
+      label: "Gİrİş",
     };
   },
   methods: {

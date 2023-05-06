@@ -214,6 +214,9 @@ export default new Vuex.Store({
         price: 6000,
       },
     ],
+    user: {
+      favorits: [],
+    },
   },
   getters: {
     getIndirim: (state) => {

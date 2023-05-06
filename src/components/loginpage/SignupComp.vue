@@ -16,7 +16,7 @@
             />
           </div>
           <div class="form-group">
-            <label for="username">E-mail addresınız</label>
+            <label for="username">E-Posta addresiniz</label>
             <input
               type="email"
               class="form-control"
