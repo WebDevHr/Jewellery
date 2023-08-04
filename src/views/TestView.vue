@@ -28,19 +28,19 @@ export default {
       if (fromLeft < 200 && fromTop < 200) {
         this.$refs.runawayButton.style.transform = `translate(${
           fromLeft - 60
-        }px, ${fromTop}px)`;
+        }px, ${fromTop}px) rotateX(20deg) rotateY(-45deg)`;
       } else if (fromLeft > 200 && fromTop > 200) {
         this.$refs.runawayButton.style.transform = `translate(${
           fromLeft - 400
-        }px, ${fromTop - 350}px)`;
+        }px, ${fromTop - 350}px) rotateX(20deg) rotateY(-45deg)`;
       } else if (fromLeft < 200 && fromTop > 200) {
         this.$refs.runawayButton.style.transform = `translate(${fromLeft}px, ${
           fromTop - 350
-        }px)`;
+        }px) rotateX(20deg) rotateY(45deg)`;
       } else if (fromLeft > 200 && fromTop < 200) {
         this.$refs.runawayButton.style.transform = `translate(${
           fromLeft - 400
-        }px, ${fromTop}px)`;
+        }px, ${fromTop}px) rotateX(20deg) rotateY(45deg)`;
       }
     },
     handleMouseLeave() {
